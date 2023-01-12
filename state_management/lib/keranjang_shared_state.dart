@@ -12,3 +12,16 @@ class KeranjangState with ChangeNotifier {
     notifyListeners();
   }
 }
+
+class KeranjangState1 with ChangeNotifier {
+  int _qty1 = 20;
+
+  int get getQty1 {
+    return _qty1;
+  }
+
+  void tambahkeranjang() {
+    _qty1++;
+    notifyListeners();
+  }
+}
