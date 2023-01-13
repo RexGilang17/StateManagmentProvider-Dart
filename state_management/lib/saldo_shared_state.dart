@@ -21,20 +21,33 @@ class SaldoState1 with ChangeNotifier {
   }
 
   void kurangiSaldo(int cost) {
-    _saldo1 -= cost;
+    _saldo1 += cost;
     notifyListeners();
   }
 }
 
 class SaldoState2 with ChangeNotifier {
-  int _saldo = 8000;
+  int _saldo2 = 8000;
 
-  int get getSaldo {
-    return _saldo;
+  int get getSaldo2 {
+    return _saldo2;
   }
 
   void kurangiSaldo(int cost) {
-    _saldo *= cost;
+    _saldo2 += cost;
     notifyListeners();
   }
 }
+
+// class SaldoState2 with ChangeNotifier {
+//   int _saldo = 8000;
+
+//   int get getSaldo {
+//     return _saldo;
+//   }
+
+//   void kurangiSaldo(int cost) {
+//     _saldo *= cost;
+//     notifyListeners();
+//   }
+// }
